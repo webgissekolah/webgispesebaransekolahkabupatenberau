@@ -1,38 +1,31 @@
-// System / Log files 
-*.DS_Store
-*.log
+.DS_Store
 
-// Archives
-*.zip
+application/cache/*
+!application/cache/index.html
 
-// Sass Cache
-.sass-cache
+application/logs/*
+!application/logs/index.html
 
-// Project files
-.idea
-nbproject
-nbproject/private
-.vscode/
-.vs/
+!application/*/.htaccess
 
-// Node / Bower
-node_modules/
-bower_components/
+composer.lock
 
-// Plugins
-/plugins/*/*.md
-/plugins/*/*.html
-/plugins/*/package.json
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+/vendor/
 
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
 
-// Docs
-Gemfile.lock
-docs/_site
-docs_html/
-.jekyll-cache/
-.jekyll-metadata
-
-// ETC
-TODO
-test.html
-ad.js
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+/tests/tests/
+/tests/results/
